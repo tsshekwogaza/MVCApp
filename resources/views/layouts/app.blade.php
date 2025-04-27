@@ -34,7 +34,7 @@
     @yield('heropage')
     @yield('newsletter') 
 
-    <footer class="bg-white mt-10">
+    <footer class="bg-white">
         <div class="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <h3 class="font-semibold text-lg mb-2">Quick Links</h3><br>
