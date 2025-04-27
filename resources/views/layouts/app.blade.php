@@ -39,12 +39,12 @@
             <div>
                 <h3 class="font-semibold text-lg mb-2">Quick Links</h3><br>
                 <ul class="space-y-1">
-                    <li><a href="/" class="text-gray-600 hover:text-blue-500">Home</a></li><br>
-                    <li><a href="/categories" class="text-gray-600 hover:text-blue-500">Categories</a></li><br>
+                    <li><a href="/" class="text-gray-600 hover:text-blue-500">FAQ</a></li><br>
+                    <li><a href="/categories" class="text-gray-600 hover:text-blue-500">DIY Tutorials</a></li><br>
                     <li><a href="/privacy" class="text-gray-600 hover:text-blue-500">Privacy Policy</a></li><br>
                     <li><a href="/affiliates" class="text-gray-600 hover:text-blue-500">Affiliates</a></li><br>
-                    <li><a href="/contact" class="text-gray-600 hover:text-blue-500">Contact</a></li><br>
-                    <li><a href="/support" class="text-gray-600 hover:text-blue-500">Support</a></li>
+                    <li><a href="/contact" class="text-gray-600 hover:text-blue-500">Useful Resources</a></li><br>
+                    <li><a href="/support" class="text-gray-600 hover:text-blue-500">Free Downloads</a></li>
                 </ul>
             </div>
             <div>

@@ -9,7 +9,7 @@
         </div>
         @foreach ($posts as $post)
             <article class="bg-white border-b p-6 rounded-lg shadow mb-6 relative">
-                <div class="absolute top-2 left-0 bg-blue-300 text-white py-2 px-4 text-sm uppercase font-semibold">New</div>
+                <div class="absolute top-2 left-0 bg-gray-700 text-white py-2 px-4 text-sm uppercase font-semibold">Latest</div>
                 {{-- <img src="{{ asset('images/blog.png') }}" alt="Img" class="w-full h-48 object-cover rounded mb-4"> --}}
                 <img src="images/{{ $post->image }}" alt="Img" class="w-full h-48 object-cover rounded mb-4">
                 <div>  
