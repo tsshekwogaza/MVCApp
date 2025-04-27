@@ -10,18 +10,18 @@
     <title>Blog</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
 <body class="bg-gray-900">
+
     <header class="bg-white shadow-md sticky top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
             <a href="{{ route('homepage') }}">
                 <img src="{{ asset('images/blog.png') }}" class="w-20 h-10">
             </a>
             <nav class="absolute left-1/2 transform -translate-x-1/2 space-x-6 hidden md:flex">
-                <a href="welcome" class="text-gray-900 font-semibold">Home</a>
-                <a href="about" class="text-gray-900 font-semibold">About</a>
-                <a href="newsletter" class="text-gray-900 font-semibold">Newsletter</a>
-                <a href="#" class="text-gray-900 font-semibold">Affiliate</a>
+                <a href="{{ route('homepage') }}" class="text-gray-900 font-semibold">Home</a>
+                <a href="{{ route('about') }}" class="text-gray-900 font-semibold">About</a>
+                <a href="{{ route('newsletter') }}" class="text-gray-900 font-semibold">Newsletter</a>
+                <a href="/" class="text-gray-900 font-semibold">Affiliate</a>
             </nav>
             <div class="space-x-4">
                 <a href="/login" class="text-gray-900 font-semibold">Login</a>
@@ -30,13 +30,9 @@
         </div>
     </header>
 
-    
-    <div class="flex container mx-auto p-4">
-        @yield('main')
-    </div>
-
+    @yield('main')
     @yield('heropage')
-    @yield('category') 
+    @yield('newsletter') 
 
     <footer class="bg-white mt-10">
         <div class="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -52,7 +48,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="font-semibold text-lg mb-2">Follow Us On</h3><br>
+                <h3 class="font-semibold text-lg mb-2">Follow Us</h3><br>
                 <ul class="space-y-1">
                     <li><a href="#" class="text-gray-600 hover:text-blue-500">Facebook</a></li><br>
                     <li><a href="#" class="text-gray-600 hover:text-blue-500">Twitter</a></li><br>
@@ -71,11 +67,11 @@
             </div>
             <div>
                 <h3 class="font-semibold text-lg mb-2">About Us</h3>
-                <p class="text-gray-600">We upload the latest trends, tips, stories in the world of design, development, and more. Sharing information and knowledge from around the world.</p>
+                <p class="text-gray-600">We upload the latest trends, tips, stories and more. Sharing information from around the world.</p>
             </div>
         </div>
         <div class="text-center text-gray-500 text-sm py-4 mt-8">
-            &copy; {{ date('Y') }} Blog Inc. All rights reserved / Privacy / Terms / Cookie Policy / Site Map
+            &copy; {{ date('Y') }} Blog Inc. All rights reserved.
         </div>
     </footer>
 
