@@ -18,10 +18,10 @@
                 <img src="{{ asset('images/blog.png') }}" class="w-20 h-10">
             </a>
             <nav class="absolute left-1/2 transform -translate-x-1/2 space-x-6 hidden md:flex">
-                <a href="/" class="text-gray-900 font-semibold">Home</a>
+                <a href="welcome" class="text-gray-900 font-semibold">Home</a>
                 <a href="about" class="text-gray-900 font-semibold">About</a>
-                <a href="contact" class="text-gray-900 font-semibold">Contact</a>
-                <a href="affiliate" class="text-gray-900 font-semibold">Affiliate</a>
+                <a href="newsletter" class="text-gray-900 font-semibold">Newsletter</a>
+                <a href="#" class="text-gray-900 font-semibold">Affiliate</a>
             </nav>
             <div class="space-x-4">
                 <a href="/login" class="text-gray-900 font-semibold">Login</a>
@@ -29,17 +29,14 @@
             </div>
         </div>
     </header>
-    
-    <div class="text-white">
-        <marquee behavior="" direction="">We hope you enjoy our articles, updates, daily insights, stories, inspirations and articles. <<<<< Our latest issue: Persistence! Nothing in the world can take the place of persistence, Talent wont; nothing is more common than unsuccessful men with talent. <<<<< Education wont; the world is full of educated fools. Genius wont; unrewarded genius is practically a... Continued in the blog post. <<< Read more in the articles section.</marquee>
-    </div>
-    <div class="mx-8 p-6">
-        <h2 class="text-white font-bold text-3xl">Latest Posts</h2>
-    </div>
 
+    
     <div class="flex container mx-auto p-4">
         @yield('main')
     </div>
+
+    @yield('heropage')
+    @yield('category') 
 
     <footer class="bg-white mt-10">
         <div class="container mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
