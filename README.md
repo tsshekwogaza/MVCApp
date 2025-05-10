@@ -3,7 +3,7 @@ This is designed to be a learning resource for Building a simple and customizabl
 
 Link is no longer hosted http://MVCApp.com
 
-**Technologies**
+**Techstack**
 
 - Laravel
 - JavaScript
@@ -11,6 +11,7 @@ Link is no longer hosted http://MVCApp.com
 - Tailwindcss
 - HTML 5
 - Vite
+- Node
 
 **IDE**
 
